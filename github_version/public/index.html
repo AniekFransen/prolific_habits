@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+  The exp.html is the main form that
+  controls the experiment.
+
+  see comments throughout for advice
+-->
+<html>
+    <!-- <style>
+      img { width: 100%;
+            /*padding-top: 100%; /* 1:1 Aspect Ratio */
+            position: relative;
+          }
+    </style> -->
+    <head>
+        <meta charset="utf-8" />
+        <title>Coin Task</title>
+        <link rel="stylesheet" href="static/js/jspsych-6.1.0/css/jspsych.css" type="text/css" />
+        <link rel="stylesheet" href="static/css/style.css" type="text/css" title="default"/>
+    </head>
+
+    <body>
+        <div class="form" id="mainSection">
+            <header class="form__header" id="header"><h3 id="header_title" class="form__title"></h3></header>
+            <section class="mainInstructions" id="consent"></section>
+        </div>
+    </body>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyAvElYwmVLgYNXbZnRuB18FbNFkDxMUpmk",
+        authDomain: "habit-short.firebaseapp.com",
+        databaseURL: "https://habit-short.firebaseio.com",
+        projectId: "habit-short",
+        storageBucket: "habit-short.appspot.com",
+        messagingSenderId: "564805764473",
+        appId: "1:564805764473:web:f85c6c5d2fefd3caf5dba8"
+    };
+    // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <!-- Package and script necessary for the task
+    Global Dependencies for all versions jspsych and other packages you need
+		-->
+    <script src="static/js/jspsych-6.1.0/jspsych.js"></script>
+    <script src="static/js/jspsych-6.1.0/plugins/jspsych-html-keyboard-response.js"></script>
+    <script src="static/js/jspsych-6.1.0/plugins/jspsych-html-button-response.js"></script>
+    <script src="static/js/jspsych-6.1.0/plugins/jspsych-image-keyboard-response.js"></script>
+    <script src="static/js/jspsych-6.1.0/plugins/jspsych-image-button-response.js"></script>
+    <script src="static/js/jspsych-6.0.5/plugins/jspsych-single-stim.js"></script>
+    <script src="static/js/jspsych-6.1.0/plugins/jspsych-call-function.js"></script>
+    <script src="static/js/jspsych-6.1.0/plugins/jspsych-html-slider-response.js"></script>
+    <script src="static/js/jspsych-6.1.0/plugins/jspsych-survey-likert.js"></script>
+    <script src="static/js/jspsych-6.1.0/plugins/jspsych-fullscreen.js"></script>
+    <script src="static/js/jspsych-6.0.5/plugins/jspsych-survey-multi-choice.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="static/js/jspsych-6.0.5/plugins/jspsych-free-sort.js"></script>
+
+
+    <!-- Task-related dependencies and functions -->
+    <script src="static/js/Dependencies/database.js"></script>
+    <script src="static/js/Dependencies/demographics.js"></script>
+    <script src="static/js/Dependencies/setup.js"></script>
+    <script src="static/js/Dependencies/instruct.js"></script>
+    <script src="static/js/Dependencies/Training.js"></script>
+    <script src="static/js/Dependencies/Getting_full_piggy.js"></script>
+    <script src="static/js/Dependencies/Full_piggy.js"></script>
+    <script src="static/js/Dependencies/Choice_test.js"></script>
+    <script src="static/js/Dependencies/Consumption.js"></script>
+    <script src="static/js/Dependencies/Contingency.js"></script>
+    <script src="static/js/Dependencies/Questionnaires.js"></script>
+    <script src="static/js/Dependencies/end.js"></script>
+
+    <!-- Import main task  -->
+    <script src="static/js/habit_shortv1.js" type="text/javascript"> </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <body>
+	    <noscript>
+			<h1>Warning: Javascript seems to be disabled</h1>
+			<p>This website requires that Javascript be enabled on your browser.</p>
+			<p>Instructions for enabling Javascript in your browser can be found
+			<a href="http://support.google.com/bin/answer.py?hl=en&answer=23852">here</a></p>
+		  </noscript>
+    </body>
+</html>
