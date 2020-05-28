@@ -55,6 +55,7 @@ jsPsych.pluginAPI.preloadImages(gold_coin_faded_img)
 jsPsych.pluginAPI.preloadImages(silver_coin_faded_img)
 jsPsych.pluginAPI.preloadImages(invisible_triangle_img)
 jsPsych.pluginAPI.preloadImages(green_coin_img)
+jsPsych.pluginAPI.preloadImages(curtain_img)
 
 function getRandomIntInclusive(min, max) {
     min = Math.ceil(min);
