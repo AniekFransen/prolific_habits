@@ -13,7 +13,8 @@ var start_instructions = {
   ],
   // you can add more instruction pages by adding to this list
   timeline_variables: [
-    {instruction: "Welcome to the coin collecter experiment. Press the space bar to begin!"},
+    {instruction: "Welcome to the coin collecter experiment. Please make sure your computers sound is turned off." +
+      "<br>(Press the space bar to continue)"},
     {instruction: "In this experiment, you have the chance to collect coins. You can collect gold and silver coins. Both gold and silver coins are worth 40 credits." +
       "<div>" +
           "<img src='" + silver_coin_img + "' height='15%' width='15%' hspace='3%'>" +
