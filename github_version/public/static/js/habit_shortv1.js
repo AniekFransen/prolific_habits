@@ -45,6 +45,7 @@ var check_consent = function (elem) {
       timeline.push(full_piggy);
       timeline.push(consumption_set);
       timeline.push(choicetest);
+      timeline.push(reacquisition);
       timeline.push(contingency);
       timeline.push(questionnaires);
       timeline.push(goodbye)
@@ -52,10 +53,6 @@ var check_consent = function (elem) {
       jsPsych.init({
           timeline: timeline,
           //preload_images: unique(preloadImages),
-          on_finish: function () {
-              jsPsych.data.displayData(); //can be commented out later on
-              console.log('Done!')
-          },
       });
   }
   else {
